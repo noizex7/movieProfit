@@ -9,7 +9,7 @@ int main()
 
 	cout << "\n\n\n\n\n\n";
 
-	cout  << "Title" << setw(40) << "Director" << setw(40) << "Release Year" << setw(40) << "Running Time(Minutes)" << setw(40) <<  "Production Cost" << setw(40) << "First Year Revenue" << setw(40) << "Profit\n";
+	cout << setw(30) << "Title" << setw(30) << "Director" << setw(30) << "Release Year" << setw(30) << "Running Time(Minutes)" << setw(30) <<  "Production Cost" << setw(30) << "First Year Revenue" << setw(30) << "Profit\n";
 
 	movie.display();
 }

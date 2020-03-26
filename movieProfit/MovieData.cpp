@@ -129,6 +129,6 @@ double MovieData::getProfit() const
 
 void MovieData::display()
 {
-	cout << getTitle() << setw(40) << getDirector() << setw(40) << getYearReleased() << setw(40)
-		<< getRunningTime() << setw(40) << fixed << setprecision(2)<< getProductionCost() << setw(40) << getFirstYearRevenue() << setw(40) << getProfit();
+	cout << setw(30) << getTitle() << setw(30) << getDirector() << setw(30) << getYearReleased() << setw(30)
+		<< getRunningTime() << fixed << setprecision(2) << setw(30) << getProductionCost() << setw(30) << getFirstYearRevenue() << setw(30) << getProfit();
 }
