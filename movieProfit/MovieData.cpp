@@ -65,7 +65,6 @@ void MovieData::setProductionCost(double aProductionCost)
 		productionCost = aProductionCost;
 	}
 
-	profit = getFirstYearRevenue() - getProductionCost();
 }
 
 void MovieData::setFirstYearRevenue(double aFirstYearRevenue)
@@ -79,6 +78,10 @@ void MovieData::setFirstYearRevenue(double aFirstYearRevenue)
 		firstYearRevenue = aFirstYearRevenue;
 	}
 
+}
+
+void MovieData::setProfit()
+{
 	profit = getFirstYearRevenue() - getProductionCost();
 }
 
@@ -90,6 +93,7 @@ void MovieData::setAll(string aTitle, string aDirector, int aYearReleased, int a
 	setRunnninngTime(aRunningTime);
 	setProductionCost(aProductionCost);
 	setFirstYearRevenue(aFirstYearRevenue);
+	setProfit();
 }
 
 string MovieData::getTitle() const

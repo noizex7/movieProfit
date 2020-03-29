@@ -27,6 +27,7 @@ public:
 	void setRunnninngTime(int);
 	void setProductionCost(double);
 	void setFirstYearRevenue(double);
+	void setProfit();
 	void setAll(string, string, int, int, double, double);
 	string getTitle() const;
 	string getDirector() const;
